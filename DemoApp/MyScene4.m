@@ -1,27 +1,30 @@
 //
-//  MyScene.m
+//  MyScene4.m
 //  ZombieConga
 //
-//  Created by Adrian's Laptop on 3/26/14.
+//  Created by Adrian's Laptop on 4/1/14.
 //  Copyright (c) 2014 Adrian's Laptop. All rights reserved.
 //
 
-#import "MyScene.h"
+#import "MyScene4.h"
 #import "GameOverScene.h"
 
 @import AVFoundation;
 
-static inline CGPoint CGPointAdd(const CGPoint a, const CGPoint b)
+static inline CGPoint CGPointAdd(const CGPoint a,
+                                 const CGPoint b)
 {
     return CGPointMake(a.x + b.x, a.y + b.y);
 }
 
-static inline CGPoint CGPointSubtract(const CGPoint a, const CGPoint b)
+static inline CGPoint CGPointSubtract(const CGPoint a,
+                                      const CGPoint b)
 {
     return CGPointMake(a.x - b.x, a.y - b.y);
 }
 
-static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
+static inline CGPoint CGPointMultiplyScalar(const CGPoint a,
+                                            const CGFloat b)
 {
     return CGPointMake(a.x * b, a.y * b);
 }
@@ -49,7 +52,8 @@ static inline CGFloat ScalarSign(CGFloat a)
 
 // Returns shortest angle between two angles,
 // between -M_PI and M_PI
-static inline CGFloat ScalarShortestAngleBetween(const CGFloat a, const CGFloat b)
+static inline CGFloat ScalarShortestAngleBetween(
+                                                 const CGFloat a, const CGFloat b)
 {
     CGFloat difference = b - a;
     CGFloat angle = fmodf(difference, M_PI * 2);
@@ -60,9 +64,11 @@ static inline CGFloat ScalarShortestAngleBetween(const CGFloat a, const CGFloat 
 }
 
 #define ARC4RANDOM_MAX      0x100000000
-static inline CGFloat ScalarRandomRange(CGFloat min, CGFloat max)
+static inline CGFloat ScalarRandomRange(CGFloat min,
+                                        CGFloat max)
 {
-    return floorf(((double)arc4random() / ARC4RANDOM_MAX) * (max - min) + min);
+    return floorf(((double)arc4random() / ARC4RANDOM_MAX) *
+                  (max - min) + min);
 }
 
 static const float ZOMBIE_MOVE_POINTS_PER_SEC = 120.0;
@@ -70,7 +76,7 @@ static const float ZOMBIE_ROTATE_RADIANS_PER_SEC = 4 * M_PI;
 static const float CAT_MOVE_POINTS_PER_SEC = 120.0;
 static const float BG_POINTS_PER_SEC = 50;
 
-@implementation MyScene
+@implementation MyScene4
 {
     SKSpriteNode *_playButton;
     SKSpriteNode *_pauseButton;
@@ -95,33 +101,35 @@ static const float BG_POINTS_PER_SEC = 50;
     BOOL _showPlayButton;
     BOOL _playButtonPressed;
 }
+
 - (void)spawnEnemy
 {
-    SKSpriteNode *enemy =
-    [SKSpriteNode spriteNodeWithImageNamed:@"enemy"];
-    enemy.name = @"enemy";
-    //[enemy setScale:0.5];
+    SKSpriteNode *enemy3 =
+    [SKSpriteNode spriteNodeWithImageNamed:@"enemy3"];
+    enemy3.name = @"enemy3";
     CGPoint enemyScenePos = CGPointMake(
-                                        self.size.width + enemy.size.width/2,
-                                        ScalarRandomRange(enemy.size.height/2,
-                                                          self.size.height-enemy.size.height/2));
-    enemy.position = [self convertPoint:enemyScenePos toNode:_bgLayer];
-    [_bgLayer addChild:enemy];
+                                        self.size.width + enemy3.size.width/2,
+                                        ScalarRandomRange(enemy3.size.height/2,
+                                                          self.size.height-enemy3.size.height/2));
+    enemy3.position = [self convertPoint:enemyScenePos toNode:_bgLayer];
+    [_bgLayer addChild:enemy3];
     
     SKAction *actionMove =
-    [SKAction moveByX:-self.size.width + enemy.size.width y:0 duration:2.0];
+    [SKAction moveByX:-self.size.width + enemy3.size.width y:0 duration:2.0];
     SKAction *actionRemove = [SKAction removeFromParent];
-    [enemy runAction:
+    [enemy3 runAction:
      [SKAction sequence:@[actionMove, actionRemove]]];
     
 }
+
 - (void)initLivesLabel {
     _livesLabel = [SKLabelNode labelNodeWithFontNamed:@"Thonburi-Bold"];
     _livesLabel.text = [NSString stringWithFormat:@"%d Lives", _lives];
     _livesLabel.fontSize = 20.0;
-    _livesLabel.position = _livesLabel.position = CGPointMake(200, 300);
+    _livesLabel.position = CGPointMake(200, 300);
     [self addChild:_livesLabel];
 }
+
 -(id)initWithSize:(CGSize)size
 {
     if (self = [super initWithSize:size]) {
@@ -131,9 +139,10 @@ static const float BG_POINTS_PER_SEC = 50;
         
         self.backgroundColor = [SKColor whiteColor];
         [self playBackgroundMusic:@"bgMusic.mp3"];
-        _lives = 3;
-        _gameOver = NO;
         
+        _lives = 7;
+        _gameOver = NO;
+        [self initLivesLabel];
         for (int i = 0; i < 2; i++) {
             SKSpriteNode * bg =
             [SKSpriteNode spriteNodeWithImageNamed:@"background"];
@@ -142,29 +151,36 @@ static const float BG_POINTS_PER_SEC = 50;
             bg.name = @"bg";
             [_bgLayer addChild:bg];
         }
-        [self initLivesLabel];
+        
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Thonburi-Bold"];
         
-        myLabel.text = @"Level 1";
+        myLabel.text = @"Level 5";
         myLabel.fontSize = 20;
         myLabel.position = CGPointMake(50, 300);
         
         [self addChild:myLabel];
-
         
         CGPoint position = CGPointMake(530,280);
+        //background.position = position;
+        //[self addChild:background];
         _pauseButton = [SKSpriteNode spriteNodeWithImageNamed:@"pausebutton"];
         _pauseButton.position = position;
         [self addChild:_pauseButton];
         
         CGPoint position1 = CGPointMake(460,280);
+        //background.position = position;
+        //[self addChild:background];
         _playButton = [SKSpriteNode spriteNodeWithImageNamed:@"playButton"];
         _playButton.position = position1;
         [self addChild:_playButton];
         
+        //CGSize mySize = bg.size;
+        //NSLog(@"Size: %@", NSStringFromCGSize(mySize));
+        
         _zombie = [SKSpriteNode spriteNodeWithImageNamed:@"zombie1"];
         _zombie.position = CGPointMake(100, 100);
         _zombie.zPosition = 100;
+        
         [_bgLayer addChild:_zombie];
         
         // 1
@@ -213,11 +229,25 @@ static const float BG_POINTS_PER_SEC = 50;
         [SKAction playSoundFileNamed:@"hitCatLady.wav"
                    waitForCompletion:NO];
         
-        _currentLevel = 1;
+        _currentLevel = 5;
         
     }
     return self;
 }
+
+//// Gesture recognizer example
+//// Uncomment this, and comment the touchesBegan/Moved/Ended methods to test
+//- (void)didMoveToView:(SKView *)view
+//{
+//  UITapGestureRecognizer * tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+//  [self.view addGestureRecognizer:tapRecognizer];
+//}
+//
+//- (void)handleTap:(UITapGestureRecognizer *)recognizer {
+//  CGPoint touchLocation = [recognizer locationInView:self.view];
+//  touchLocation = [self convertPointFromView:touchLocation];
+//  [self moveZombieToward:touchLocation];
+//}
 
 - (void)update:(NSTimeInterval)currentTime
 {
@@ -232,6 +262,15 @@ static const float BG_POINTS_PER_SEC = 50;
         _lastUpdateTime = 0;
         return;
     }
+    //NSLog(@"%0.2f milliseconds since last update", _dt * 1000);
+    
+    //CGPoint offset = CGPointSubtract(_lastTouchLocation, _zombie.position);
+    //float distance = CGPointLength(offset);
+    /*if (distance < ZOMBIE_MOVE_POINTS_PER_SEC * _dt) {
+     _zombie.position = _lastTouchLocation;
+     _velocity = CGPointZero;
+     [self stopZombieAnimation];
+     } else {*/
     [self moveSprite:_zombie velocity:_velocity];
     [self boundsCheckPlayer];
     [self rotateSprite:_zombie toFace:_velocity rotateRadiansPerSec:ZOMBIE_ROTATE_RADIANS_PER_SEC];
@@ -239,6 +278,7 @@ static const float BG_POINTS_PER_SEC = 50;
     
     [self moveTrain];
     [self moveBg];
+    //[self checkCollisions];
     
     if (_lives <= 0 && !_gameOver) {
         _gameOver = YES;
@@ -246,7 +286,7 @@ static const float BG_POINTS_PER_SEC = 50;
         [_backgroundMusicPlayer stop];
         // 1
         SKScene * gameOverScene =
-        [[GameOverScene alloc] initWithSize:self.size won:NO];
+        [[GameOverScene alloc] initWithSize:self.size won4:NO];
         // 2
         SKTransition *reveal =
         [SKTransition flipHorizontalWithDuration:0.5];
@@ -298,7 +338,6 @@ static const float BG_POINTS_PER_SEC = 50;
         _pauseButtonPressed = YES;
         _playButtonPressed = NO;
         [_backgroundMusicPlayer stop];
-        [self stopZombieAnimation];
         self.scene.paused = YES;
     }
     
@@ -307,7 +346,6 @@ static const float BG_POINTS_PER_SEC = 50;
         _playButtonPressed = YES;
         _pauseButtonPressed = NO;
         [_backgroundMusicPlayer play];
-        [self stopZombieAnimation];
         self.scene.paused = NO;
     }
 }
@@ -462,10 +500,10 @@ static const float BG_POINTS_PER_SEC = 50;
     
     if (_invincible) return;
     
-    [_bgLayer enumerateChildNodesWithName:@"enemy"
+    [_bgLayer enumerateChildNodesWithName:@"enemy3"
                                usingBlock:^(SKNode *node, BOOL *stop){
-                                   SKSpriteNode *enemy = (SKSpriteNode *)node;
-                                   CGRect smallerFrame = CGRectInset(enemy.frame, 20, 20);
+                                   SKSpriteNode *enemy3 = (SKSpriteNode *)node;
+                                   CGRect smallerFrame = CGRectInset(enemy3.frame, 20, 20);
                                    if (CGRectIntersectsRect(smallerFrame, _zombie.frame)) {
                                        //[enemy removeFromParent];
                                        [self runAction:_enemyCollisionSound];
@@ -510,7 +548,7 @@ static const float BG_POINTS_PER_SEC = 50;
                                    }
                                    targetPosition = node.position;
                                }];
-    if (trainCount >= 5 && !_gameOver) {
+    if (trainCount >= 9 && !_gameOver) {
         _gameOver = YES;
         //NSLog(@"You win!");
         if (_currentLevel<9){
@@ -522,7 +560,7 @@ static const float BG_POINTS_PER_SEC = 50;
         [_backgroundMusicPlayer stop];
         // 1
         SKScene * gameOverScene =
-        [[GameOverScene alloc] initWithSize:self.size won:YES];
+        [[GameOverScene alloc] initWithSize:self.size won4:YES];
         // 2
         SKTransition *reveal =
         [SKTransition flipHorizontalWithDuration:0.5];
@@ -547,10 +585,7 @@ static const float BG_POINTS_PER_SEC = 50;
          // 3
          node.name = @"";
          [node runAction:
-          [SKAction sequence:@[[SKAction group:@[[SKAction rotateByAngle:M_PI * 4 duration:1.0],
-                                                 [SKAction moveTo:randomSpot duration:1.0],
-                                                 [SKAction scaleTo:0 duration:1.0]]],
-                               [SKAction removeFromParent]]]];
+          [SKAction sequence:@[[SKAction group:@[[SKAction rotateByAngle:M_PI * 4 duration:1.0], [SKAction moveTo:randomSpot duration:1.0], [SKAction scaleTo:0 duration:1.0]]], [SKAction removeFromParent]]]];
          
          // 4
          loseCount++;

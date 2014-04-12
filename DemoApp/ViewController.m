@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  DemoApp
+//  ZombieConga
 //
-//  Created by Adrian Phillips on 4/9/14.
-//  Copyright (c) 2014 Adrian Phillips. All rights reserved.
+//  Created by Adrian's Laptop on 3/26/14.
+//  Copyright (c) 2014 Adrian's Laptop. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "MyScene.h"
+#import "MainMenuScene.h"
 
 @implementation ViewController
 
@@ -22,7 +22,7 @@
         skView.showsNodeCount = YES;
         
         // Create and configure the scene.
-        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+        SKScene * scene = [MainMenuScene sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
         // Present the scene.

@@ -1,14 +1,13 @@
 //
-//  ViewController.h
+//  MyScene9.h
 //  ZombieConga
 //
-
+//  Created by Adrian's Laptop on 4/9/14.
 //  Copyright (c) 2014 Adrian's Laptop. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface ViewController : UIViewController
+@interface MyScene9 : SKScene
 
 @end

@@ -15,16 +15,12 @@
 		542EB3C518F57CA30034B045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 542EB3C418F57CA30034B045 /* main.m */; };
 		542EB3C918F57CA30034B045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542EB3C818F57CA30034B045 /* AppDelegate.m */; };
 		542EB3CC18F57CA30034B045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3CA18F57CA30034B045 /* Main.storyboard */; };
-		542EB3CF18F57CA30034B045 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542EB3CE18F57CA30034B045 /* ViewController.m */; };
-		542EB3D218F57CA30034B045 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 542EB3D118F57CA30034B045 /* MyScene.m */; };
-		542EB3D418F57CA30034B045 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3D318F57CA30034B045 /* Spaceship.png */; };
 		542EB3D618F57CA30034B045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3D518F57CA30034B045 /* Images.xcassets */; };
 		542EB3DD18F57CA30034B045 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542EB3DC18F57CA30034B045 /* XCTest.framework */; };
 		542EB3DE18F57CA30034B045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542EB3B618F57CA30034B045 /* Foundation.framework */; };
 		542EB3DF18F57CA30034B045 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542EB3BA18F57CA30034B045 /* UIKit.framework */; };
 		542EB3E718F57CA30034B045 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3E518F57CA30034B045 /* InfoPlist.strings */; };
 		542EB3E918F57CA30034B045 /* DemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 542EB3E818F57CA30034B045 /* DemoAppTests.m */; };
-		542EB3F718F57DEB0034B045 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 542EB3F618F57DEB0034B045 /* GameOverScene.m */; };
 		542EB41C18F57EF80034B045 /* background (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3FA18F57EF80034B045 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */; };
 		542EB41D18F57EF80034B045 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3FB18F57EF80034B045 /* background.png */; };
 		542EB41E18F57EF80034B045 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB3FC18F57EF80034B045 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */; };
@@ -57,6 +53,26 @@
 		542EB43918F57EF80034B045 /* zombie3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB41918F57EF80034B045 /* zombie3@2x.png */; };
 		542EB43A18F57EF80034B045 /* zombie4.png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB41A18F57EF80034B045 /* zombie4.png */; };
 		542EB43B18F57EF80034B045 /* zombie4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 542EB41B18F57EF80034B045 /* zombie4@2x.png */; };
+		54B9EF2218F9920C003C38BA /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2118F9920C003C38BA /* Chapter.m */; };
+		54B9EF3118F9923B003C38BA /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2418F9923B003C38BA /* MyScene.m */; };
+		54B9EF3218F9923B003C38BA /* MyScene1.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2618F9923B003C38BA /* MyScene1.m */; };
+		54B9EF3318F9923B003C38BA /* MyScene2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2818F9923B003C38BA /* MyScene2.m */; };
+		54B9EF3418F9923B003C38BA /* MyScene3.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2A18F9923B003C38BA /* MyScene3.m */; };
+		54B9EF3518F9923B003C38BA /* MyScene4.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2C18F9923B003C38BA /* MyScene4.m */; };
+		54B9EF3618F9923B003C38BA /* MyScene5.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF2E18F9923B003C38BA /* MyScene5.m */; };
+		54B9EF3718F9923B003C38BA /* MyScene6.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF3018F9923B003C38BA /* MyScene6.m */; };
+		54B9EF4818F99249003C38BA /* Chapter1.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF3918F99249003C38BA /* Chapter1.m */; };
+		54B9EF4918F99249003C38BA /* MyScene7.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF3B18F99249003C38BA /* MyScene7.m */; };
+		54B9EF4A18F99249003C38BA /* MyScene8.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF3D18F99249003C38BA /* MyScene8.m */; };
+		54B9EF4B18F99249003C38BA /* MyScene9.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF3F18F99249003C38BA /* MyScene9.m */; };
+		54B9EF4C18F99249003C38BA /* MyScene10.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF4118F99249003C38BA /* MyScene10.m */; };
+		54B9EF4D18F99249003C38BA /* MyScene11.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF4318F99249003C38BA /* MyScene11.m */; };
+		54B9EF4E18F99249003C38BA /* MyScene12.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF4518F99249003C38BA /* MyScene12.m */; };
+		54B9EF4F18F99249003C38BA /* MyScene13.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF4718F99249003C38BA /* MyScene13.m */; };
+		54B9EF5818F99264003C38BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF5118F99264003C38BA /* ViewController.m */; };
+		54B9EF5918F99264003C38BA /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF5318F99264003C38BA /* GameOverScene.m */; };
+		54B9EF5A18F99264003C38BA /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF5518F99264003C38BA /* MainMenuScene.m */; };
+		54B9EF5B18F99264003C38BA /* MainMenuScene1.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9EF5718F99264003C38BA /* MainMenuScene1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,19 +98,12 @@
 		542EB3C718F57CA30034B045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		542EB3C818F57CA30034B045 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		542EB3CB18F57CA30034B045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		542EB3CD18F57CA30034B045 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		542EB3CE18F57CA30034B045 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		542EB3D018F57CA30034B045 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		542EB3D118F57CA30034B045 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		542EB3D318F57CA30034B045 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		542EB3D518F57CA30034B045 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		542EB3DB18F57CA30034B045 /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		542EB3DC18F57CA30034B045 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		542EB3E418F57CA30034B045 /* DemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoAppTests-Info.plist"; sourceTree = "<group>"; };
 		542EB3E618F57CA30034B045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		542EB3E818F57CA30034B045 /* DemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppTests.m; sourceTree = "<group>"; };
-		542EB3F518F57DEB0034B045 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
-		542EB3F618F57DEB0034B045 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 		542EB3FA18F57EF80034B045 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background (Charlie Fulton's conflicted copy 2013-10-22).png"; sourceTree = "<group>"; };
 		542EB3FB18F57EF80034B045 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		542EB3FC18F57EF80034B045 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x (Charlie Fulton's conflicted copy 2013-10-22).png"; sourceTree = "<group>"; };
@@ -127,6 +136,46 @@
 		542EB41918F57EF80034B045 /* zombie3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie3@2x.png"; sourceTree = "<group>"; };
 		542EB41A18F57EF80034B045 /* zombie4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie4.png; sourceTree = "<group>"; };
 		542EB41B18F57EF80034B045 /* zombie4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie4@2x.png"; sourceTree = "<group>"; };
+		54B9EF2018F9920C003C38BA /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		54B9EF2118F9920C003C38BA /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		54B9EF2318F9923B003C38BA /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		54B9EF2418F9923B003C38BA /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		54B9EF2518F9923B003C38BA /* MyScene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene1.h; sourceTree = "<group>"; };
+		54B9EF2618F9923B003C38BA /* MyScene1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene1.m; sourceTree = "<group>"; };
+		54B9EF2718F9923B003C38BA /* MyScene2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene2.h; sourceTree = "<group>"; };
+		54B9EF2818F9923B003C38BA /* MyScene2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene2.m; sourceTree = "<group>"; };
+		54B9EF2918F9923B003C38BA /* MyScene3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene3.h; sourceTree = "<group>"; };
+		54B9EF2A18F9923B003C38BA /* MyScene3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene3.m; sourceTree = "<group>"; };
+		54B9EF2B18F9923B003C38BA /* MyScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene4.h; sourceTree = "<group>"; };
+		54B9EF2C18F9923B003C38BA /* MyScene4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene4.m; sourceTree = "<group>"; };
+		54B9EF2D18F9923B003C38BA /* MyScene5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene5.h; sourceTree = "<group>"; };
+		54B9EF2E18F9923B003C38BA /* MyScene5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene5.m; sourceTree = "<group>"; };
+		54B9EF2F18F9923B003C38BA /* MyScene6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene6.h; sourceTree = "<group>"; };
+		54B9EF3018F9923B003C38BA /* MyScene6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene6.m; sourceTree = "<group>"; };
+		54B9EF3818F99249003C38BA /* Chapter1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter1.h; sourceTree = "<group>"; };
+		54B9EF3918F99249003C38BA /* Chapter1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter1.m; sourceTree = "<group>"; };
+		54B9EF3A18F99249003C38BA /* MyScene7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene7.h; sourceTree = "<group>"; };
+		54B9EF3B18F99249003C38BA /* MyScene7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene7.m; sourceTree = "<group>"; };
+		54B9EF3C18F99249003C38BA /* MyScene8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene8.h; sourceTree = "<group>"; };
+		54B9EF3D18F99249003C38BA /* MyScene8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene8.m; sourceTree = "<group>"; };
+		54B9EF3E18F99249003C38BA /* MyScene9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene9.h; sourceTree = "<group>"; };
+		54B9EF3F18F99249003C38BA /* MyScene9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene9.m; sourceTree = "<group>"; };
+		54B9EF4018F99249003C38BA /* MyScene10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene10.h; sourceTree = "<group>"; };
+		54B9EF4118F99249003C38BA /* MyScene10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene10.m; sourceTree = "<group>"; };
+		54B9EF4218F99249003C38BA /* MyScene11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene11.h; sourceTree = "<group>"; };
+		54B9EF4318F99249003C38BA /* MyScene11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene11.m; sourceTree = "<group>"; };
+		54B9EF4418F99249003C38BA /* MyScene12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene12.h; sourceTree = "<group>"; };
+		54B9EF4518F99249003C38BA /* MyScene12.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene12.m; sourceTree = "<group>"; };
+		54B9EF4618F99249003C38BA /* MyScene13.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene13.h; sourceTree = "<group>"; };
+		54B9EF4718F99249003C38BA /* MyScene13.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene13.m; sourceTree = "<group>"; };
+		54B9EF5018F99264003C38BA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		54B9EF5118F99264003C38BA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54B9EF5218F99264003C38BA /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		54B9EF5318F99264003C38BA /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
+		54B9EF5418F99264003C38BA /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
+		54B9EF5518F99264003C38BA /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
+		54B9EF5618F99264003C38BA /* MainMenuScene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene1.h; sourceTree = "<group>"; };
+		54B9EF5718F99264003C38BA /* MainMenuScene1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,13 +240,46 @@
 				542EB3C718F57CA30034B045 /* AppDelegate.h */,
 				542EB3C818F57CA30034B045 /* AppDelegate.m */,
 				542EB3CA18F57CA30034B045 /* Main.storyboard */,
-				542EB3CD18F57CA30034B045 /* ViewController.h */,
-				542EB3CE18F57CA30034B045 /* ViewController.m */,
-				542EB3D018F57CA30034B045 /* MyScene.h */,
-				542EB3D118F57CA30034B045 /* MyScene.m */,
-				542EB3D318F57CA30034B045 /* Spaceship.png */,
-				542EB3F518F57DEB0034B045 /* GameOverScene.h */,
-				542EB3F618F57DEB0034B045 /* GameOverScene.m */,
+				54B9EF2018F9920C003C38BA /* Chapter.h */,
+				54B9EF2118F9920C003C38BA /* Chapter.m */,
+				54B9EF2318F9923B003C38BA /* MyScene.h */,
+				54B9EF2418F9923B003C38BA /* MyScene.m */,
+				54B9EF2518F9923B003C38BA /* MyScene1.h */,
+				54B9EF2618F9923B003C38BA /* MyScene1.m */,
+				54B9EF2718F9923B003C38BA /* MyScene2.h */,
+				54B9EF2818F9923B003C38BA /* MyScene2.m */,
+				54B9EF2918F9923B003C38BA /* MyScene3.h */,
+				54B9EF2A18F9923B003C38BA /* MyScene3.m */,
+				54B9EF2B18F9923B003C38BA /* MyScene4.h */,
+				54B9EF2C18F9923B003C38BA /* MyScene4.m */,
+				54B9EF2D18F9923B003C38BA /* MyScene5.h */,
+				54B9EF2E18F9923B003C38BA /* MyScene5.m */,
+				54B9EF2F18F9923B003C38BA /* MyScene6.h */,
+				54B9EF3018F9923B003C38BA /* MyScene6.m */,
+				54B9EF3818F99249003C38BA /* Chapter1.h */,
+				54B9EF3918F99249003C38BA /* Chapter1.m */,
+				54B9EF3A18F99249003C38BA /* MyScene7.h */,
+				54B9EF3B18F99249003C38BA /* MyScene7.m */,
+				54B9EF3C18F99249003C38BA /* MyScene8.h */,
+				54B9EF3D18F99249003C38BA /* MyScene8.m */,
+				54B9EF3E18F99249003C38BA /* MyScene9.h */,
+				54B9EF3F18F99249003C38BA /* MyScene9.m */,
+				54B9EF4018F99249003C38BA /* MyScene10.h */,
+				54B9EF4118F99249003C38BA /* MyScene10.m */,
+				54B9EF4218F99249003C38BA /* MyScene11.h */,
+				54B9EF4318F99249003C38BA /* MyScene11.m */,
+				54B9EF4418F99249003C38BA /* MyScene12.h */,
+				54B9EF4518F99249003C38BA /* MyScene12.m */,
+				54B9EF4618F99249003C38BA /* MyScene13.h */,
+				54B9EF4718F99249003C38BA /* MyScene13.m */,
+				54B9EF5018F99264003C38BA /* ViewController.h */,
+				54B9EF5118F99264003C38BA /* ViewController.m */,
+				54B9EF5218F99264003C38BA /* GameOverScene.h */,
+				54B9EF5318F99264003C38BA /* GameOverScene.m */,
+				54B9EF5418F99264003C38BA /* MainMenuScene.h */,
+				54B9EF5518F99264003C38BA /* MainMenuScene.m */,
+				54B9EF5618F99264003C38BA /* MainMenuScene1.h */,
+				54B9EF5718F99264003C38BA /* MainMenuScene1.m */,
 				542EB3D518F57CA30034B045 /* Images.xcassets */,
 				542EB3F818F57EF80034B045 /* Art */,
 				542EB3BF18F57CA30034B045 /* Supporting Files */,
@@ -403,7 +485,6 @@
 				542EB3D618F57CA30034B045 /* Images.xcassets in Resources */,
 				542EB42C18F57EF80034B045 /* cat@2x.png in Resources */,
 				542EB42F18F57EF80034B045 /* enemy2@2x.png in Resources */,
-				542EB3D418F57CA30034B045 /* Spaceship.png in Resources */,
 				542EB41F18F57EF80034B045 /* background@2x.png in Resources */,
 				542EB42918F57EF80034B045 /* lose.wav in Resources */,
 				542EB3CC18F57CA30034B045 /* Main.storyboard in Resources */,
@@ -427,10 +508,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542EB3D218F57CA30034B045 /* MyScene.m in Sources */,
-				542EB3CF18F57CA30034B045 /* ViewController.m in Sources */,
+				54B9EF3418F9923B003C38BA /* MyScene3.m in Sources */,
+				54B9EF3118F9923B003C38BA /* MyScene.m in Sources */,
+				54B9EF4F18F99249003C38BA /* MyScene13.m in Sources */,
+				54B9EF4B18F99249003C38BA /* MyScene9.m in Sources */,
+				54B9EF5B18F99264003C38BA /* MainMenuScene1.m in Sources */,
+				54B9EF5A18F99264003C38BA /* MainMenuScene.m in Sources */,
+				54B9EF4818F99249003C38BA /* Chapter1.m in Sources */,
+				54B9EF4D18F99249003C38BA /* MyScene11.m in Sources */,
+				54B9EF2218F9920C003C38BA /* Chapter.m in Sources */,
+				54B9EF3718F9923B003C38BA /* MyScene6.m in Sources */,
+				54B9EF5818F99264003C38BA /* ViewController.m in Sources */,
+				54B9EF3518F9923B003C38BA /* MyScene4.m in Sources */,
+				54B9EF5918F99264003C38BA /* GameOverScene.m in Sources */,
+				54B9EF4918F99249003C38BA /* MyScene7.m in Sources */,
+				54B9EF3618F9923B003C38BA /* MyScene5.m in Sources */,
+				54B9EF3318F9923B003C38BA /* MyScene2.m in Sources */,
 				542EB3C918F57CA30034B045 /* AppDelegate.m in Sources */,
-				542EB3F718F57DEB0034B045 /* GameOverScene.m in Sources */,
+				54B9EF3218F9923B003C38BA /* MyScene1.m in Sources */,
+				54B9EF4E18F99249003C38BA /* MyScene12.m in Sources */,
+				54B9EF4C18F99249003C38BA /* MyScene10.m in Sources */,
+				54B9EF4A18F99249003C38BA /* MyScene8.m in Sources */,
 				542EB3C518F57CA30034B045 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

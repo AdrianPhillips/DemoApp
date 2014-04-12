@@ -1,9 +1,9 @@
 //
 //  MyScene.h
-//  DemoApp
+//  ZombieConga
 //
 
-//  Copyright (c) 2014 Adrian Phillips. All rights reserved.
+//  Copyright (c) 2014 Adrian's Laptop. All rights reserved.
 //
 
 #import <SpriteKit/SpriteKit.h>
